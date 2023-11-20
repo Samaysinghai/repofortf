@@ -1,0 +1,19 @@
+name: Print Repository Info
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print_info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print Repository Information
+        run: |
+          echo "Repository Owner: $GITHUB_REPOSITORY_OWNER"
+          echo "Repository Name: $GITHUB_REPOSITORY_NAME"
