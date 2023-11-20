@@ -15,5 +15,5 @@ jobs:
 
       - name: Print Repository Information
         run: |
-          echo "Repository Owner: $GITHUB_REPOSITORY_OWNER"
-          echo "Repository Name: $GITHUB_REPOSITORY_NAME"
+          echo "Repository Owner: $GITHUB_ACTOR"
+          echo "Repository Name: $GITHUB_REPOSITORY"
